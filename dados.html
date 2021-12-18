@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <link rel="shortcut icon" href="/img/favicon.png"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakeFocus/Data</title>
+
+    <!--css-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--jQuery-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <div class="App">
+        <div class="header">
+            <img src="https://image.flaticon.com/icons/png/512/1591/1591801.png" alt="icone-tomate">
+            <h2 class="title">TakeFocus</h2>
+            <h4>O seu aplicativo Pomodoro.</h4>
+        </div>
+
+        <div class="box-pay">
+            <p>
+                Insira o seu e-mail e clique em próximo, é importante inserir os dados certos,
+                pois a versão premium do aplicativo será enviada através do e-mail após a confirmação
+                do pagamento.
+            </p>
+
+            <input type="email" name="mail" id="mail" placeholder="insira o seu e-mail...">
+            <input type="email" name="mail" id="nmail" placeholder="insira um segundo e-mail...">
+            <button>Próximo</button>
+        </div>
+    </div>
+
+    <script>
+        $('button').click(() => {
+            const email = $('#mail').val()
+            const nmail = $('#nmail').val()
+            
+            //*Email vazio
+            //*Email curto demais
+            //*Email iguais
+            //*Possui um @ no email
+            if(email != '' && email.length >= 15 && nmail != '' && nmail.length >= 15 && email != nmail) {
+                email.indexOf('@') > -1 && nmail.indexOf('@') > -1? location.href='pagamento.html' : alert('Algo errado!')
+            } else {
+                alert('Esse e-mail não é válido, veja se ele está correto ou use outro.') 
+            }              
+        }) 
+    </script>
+</body>
+</html>
