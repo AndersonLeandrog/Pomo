@@ -1,4 +1,4 @@
-# Pomodoro App
+# takeFocus!
 #### Organize-se com o Pomodoro App! adicione as suas tarefas e cumpra dentro do prazo! Pomodoro App foi feito especialmente para você focar em uma tarefa de cada vez, seja mais produtivo no seu trabalho, possui um contador personalizado e intuitivo e mais 5 temas exclusivos para você usar a vontade com um design robusto, app ainda em desenvolvimento em fase final.
 
 ![Alt text](https://i.ibb.co/dfN3xZ3/img.png)
