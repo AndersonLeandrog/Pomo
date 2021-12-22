@@ -9,7 +9,11 @@
 
     <!--css-->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--jQuery-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
+
 <body>
     <div class="App">
         <div class="header">
@@ -28,5 +32,11 @@
             <button>Pagar</button>
         </div>
     </div>
+
+    <script>
+        $('button').click(() => {
+            location.href="maintenance.html"
+        })
+    </script>
 </body>
 </html>

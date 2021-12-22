@@ -13,6 +13,7 @@
     <!--jQuery-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
+
 <body>
     <div class="App">
         <div class="header">
@@ -38,13 +39,8 @@
         $('button').click(() => {
             const email = $('#mail').val()
             const nmail = $('#nmail').val()
-            
-            //*Email vazio
-            //*Email curto demais
-            //*Email iguais
-            //*Possui um @ no email
             if(email != '' && email.length >= 15 && nmail != '' && nmail.length >= 15 && email != nmail) {
-                email.indexOf('@') > -1 && nmail.indexOf('@') > -1? location.href='pagamento.html' : alert('Algo errado!')
+                email.indexOf('@') > -1 && nmail.indexOf('@') > -1? location.href='pay.html' : null
             } else {
                 alert('Esse e-mail não é válido, veja se ele está correto ou use outro.') 
             }              
