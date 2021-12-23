@@ -6,8 +6,10 @@ document.getElementsByTagName('head')[0].appendChild(script)
 
 window.addEventListener('load', () => {
     let v = 0
-    $('.config').click(() => {
-        $('.box-config').fadeIn()
+    const t = 500
+    $('.config').click(function() {
+        $(this).attr('disabled', true)
+        $('.box-config').fadeIn(t)
         $('.box-config').css('display', 'flex')
 
         for(let i = 0; i === 0; i++) {
@@ -16,13 +18,19 @@ window.addEventListener('load', () => {
                 $('.contagem').html('fechando menu em ' + v + '/30s')
 
                 if(v === 31) {
-                    $('.box-config').fadeOut(500)
+                    $(this).attr('disabled', false)
+                    $('.box-config').fadeOut(t)
                     clearInterval(intervalo)
                     v = 0
                 } 
             }, 1000)
         }
     })
+
+    $('.App').click(() => {
+        $('.config').attr('disabled', false)
+        $('.box-config').fadeOut(t)
+    }) 
 
     $('.buy').click(() => {
         location.href='data.html'
