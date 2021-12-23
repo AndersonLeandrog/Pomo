@@ -62,7 +62,6 @@ function iniciar() {
   }
 }
 
-
 function parar(){
   $('.iniciar').attr('disabled', false)
   clearInterval(contador)
@@ -76,28 +75,28 @@ function resetar(){
       $('.iniciar').attr('disabled', false)
       $('.relogio').html('25:00')
       min = 24, seg = 60
-      break;
+    break;
 
     case 1:
       clearInterval(contador)
       $('.iniciar').attr('disabled', false)
       $('.relogio').html('3:00')
       min = 2, seg = 60
-      break;
+    break;
 
     case 2:
       clearInterval(contador)
       $('.iniciar').attr('disabled', false)
       $('.relogio').html('5:00')
       min = 4, seg = 60
-      break;
+    break;
 
     case 3:
       clearInterval(contador)
       $('.iniciar').attr('disabled', false)
       $('.relogio').html('15:00')
       min = 14, seg = 60
-      break;
+    break;
   }
 }
 
@@ -105,26 +104,23 @@ function resetar(){
 function tresMinutos() {
   clearInterval(contador)
   $('.relogio').html('3:00')
-  min = 2
-  seg = 60
-  vrelogio = 1
+  $('.iniciar').attr('disabled', false)
+  min = 2, seg = 60, vrelogio = 1
 }
 
 function cincoMinutos() {
   clearInterval(contador)
   $('.relogio').html('5:00')
-  min = 4
-  seg = 60
-  vrelogio = 2
+  $('.iniciar').attr('disabled', false)
+  min = 4, seg = 60, vrelogio = 2
 }
 
 
 function quinzeMinutos() {
   clearInterval(contador)
   $('.relogio').html('15:00')
-  min = 14
-  seg = 60
-  vrelogio = 3
+  $('.iniciar').attr('disabled', false)
+  min = 14, seg = 60, vrelogio = 3
 }
 
 
