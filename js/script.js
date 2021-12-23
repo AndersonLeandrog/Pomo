@@ -1,10 +1,8 @@
-//Adicionando o jQuery na página pelo Javascript
 var script = document.createElement('script');
 script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-//Definição das variáveis globais básicas
 min = 24, seg = 60, barraDeProgresso = 0, vrelogio = 0 
 
 function iniciar() {
