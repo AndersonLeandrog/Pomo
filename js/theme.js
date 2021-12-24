@@ -13,44 +13,24 @@ window.addEventListener('load', () => {
   //Default
   $(defaul).click(original = () => {
     $('body').css('background', '#6959CD')
-    $('.app-box').css('background', 'rgb(128, 112, 230)')
-
-    const button = document.querySelectorAll("button")
-    for(i = 0; i < button.length; i++){
-      button[i].style.background="white"
-      button[i].style.borderBottomColor="silver"
-      button[i].style.color="#6959CD"
-    }
-
-    $(defaul).css('background', '#6959CD')
-    $(black).css('background', 'silver')
-    $(coral).css('background', 'silver')
-    $(coffe).css('background', 'silver')
-    $(green).css('background', 'silver')
-
-    $('.social-box').css('background', 'white')
+    $('.app-box').css('background', '#8070E6')
+    $('.de').css('background', '#6959CD')
+    $('.bk').css('background', '#C0C0C0')
+    $('.cr').css('background', '#C0C0C0')
+    $('.co').css('background', '#C0C0C0')
+    $('.gr').css('background', '#C0C0C0')
   })
 
 
   //Black
   $(black).click(() => {
-    $('body').css('background', '#1c1c1c')
-      $('.app-box').css('background', '#3d3d3d')
-    
-      const button = document.querySelectorAll("button")
-      for(i = 0; i < button.length; i++){
-        button[i].style.background="#141414"
-        button[i].style.borderBottomColor="black"
-        button[i].style.color="whitesmoke"
-      }
-
+    $('body').css('background', '#1C1C1C')
+      $('.app-box').css('background', '#3D3D3D')
       $(defaul).css('background', 'silver')
       $(black).css('background', 'white')
       $(coral).css('background', 'silver')
       $(coffe).css('background', 'silver')
       $(green).css('background', 'silver')
-      
-      $('.social-box').css('background', 'black')
 
       for(let v = true; v === true; v++) {
         const contagem = setInterval(() => {
@@ -65,21 +45,11 @@ window.addEventListener('load', () => {
   $(coral).click(() => {
     $('body').css('background', '#CD5C5C')
     $('.app-box').css('background', '#f08080')
-
-    const button = document.querySelectorAll("button")
-    for(i = 0; i < button.length; i++){
-      button[i].style.background="white"
-      button[i].style.borderBottomColor="silver"
-      button[i].style.color="#CD5C5C"
-    }
-
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
     $(coral).css('background', 'coral')
     $(coffe).css('background', 'silver')
     $(green).css('background', 'silver')
-
-    $('.social-box').css('background', 'white')
   })
 
 
@@ -87,21 +57,11 @@ window.addEventListener('load', () => {
   $(coffe).click(() => {
     $('body').css('background', '#d2b48c')
     $('.app-box').css('background', '#f5deb3')
-
-    const button = document.querySelectorAll("button")
-    for(i = 0; i < button.length; i++){
-      button[i].style.background="white"
-      button[i].style.borderBottomColor="silver"
-      button[i].style.color="#D2B48C"
-    }
-
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
     $(coral).css('background', 'silver')
     $(coffe).css('background', '#D2B48C')
     $(green).css('background', 'silver')
-
-    $('.social-box').css('background', 'white')
 
     for(let v = true; v === true; v++) {
       const contagem = setInterval(() => {
@@ -116,21 +76,11 @@ window.addEventListener('load', () => {
   $(green).click(() => {
     $('body').css('background', '#2e8b57')
     $('.app-box').css('background', '#3cb371')
-
-    const button = document.querySelectorAll("button")
-    for(i = 0; i < button.length; i++){
-      button[i].style.background="white"
-      button[i].style.borderBottomColor="silver"
-      button[i].style.color="#2E8B57"
-    }
-
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
     $(coral).css('background', 'silver')
     $(coffe).css('background', 'silver')
     $(green).css('background', '#2E8B57')
-
-    $('.social-box').css('background', 'white')
 
     for(let v = true; v === true; v++) {
       const contagem = setInterval(() => {

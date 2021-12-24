@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: white;
@@ -13,7 +13,7 @@ body{
     background: #6959CD;
   }
   
-  h1{
+  h1 {
     font-size: 4.2em;
   }
 
@@ -22,7 +22,7 @@ body{
     padding-top: 10px;
   }
   
-  img{
+  img {
     width: 38px;
     height: 38px;
   }
@@ -31,7 +31,7 @@ body{
     margin-left: 5px;
   }
   
-  button{
+  button {
     width: 82px;
     height: 35px;
     cursor: pointer;
@@ -41,14 +41,14 @@ body{
     background: whitesmoke;
     
     font-size: 1.15em;
-    color: rgb(128, 112, 230);
+    color: #3d3d3d;
   }
   
-  button:hover{
-    border-bottom: none;
-  }
+    button:hover {
+      border-bottom: none;
+    }
 
-  input{
+  input {
     width: 70%;
     height: 32px;
     outline: none;
@@ -56,7 +56,7 @@ body{
     background: whitesmoke;
   }
 
-  .App{
+  .App {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -65,8 +65,7 @@ body{
 
   }
     
-
-    .App .header{
+    .App .header {
       width: 320px;
       margin-bottom: 15px;
 
@@ -76,62 +75,61 @@ body{
       align-items: center;
     }
   
-      .App .header img{
+      .App .header img {
         width: 32px;
         height: 32px;
         margin-right: 5px;
-  
-        animation-name: kick;
-        animation-duration: 0.46s;
-        animation-iteration-count: infinite;
       }
     
-    .App .bar{
+
+    .App .bar {
       width: 248px;
       height: 3px;
       border-radius: 10px;
       background: black;
     }
         
-      .App .bar .progressbar{
+      .App .bar .progressbar {
         width: 0%;
         height: 3px;
         border-radius: 10px;
         background: coral;
       }
 
-      .App .box-option {
-        width: 320px;
-        height: 35px;
+
+    .App .box-option {
+      width: 320px;
+      height: 35px;
+      border-radius: 5px;
+      margin: 15px 0px 15px 0px;
+      padding: 0;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+      .App .box-option li {
+        cursor: pointer;
+        width: 30%;
+        height: 30px;
+        list-style: none;
         border-radius: 5px;
-        margin: 15px 0px 15px 0px;
-        padding: 0;
+        background: white;
+
+        color: #3d3d3d;
 
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
       }
 
-        .App .box-option li {
-          cursor: pointer;
-          width: 30%;
-          height: 30px;
-          list-style: none;
-          border-radius: 5px;
-          background: white;
-
-          color: #3d3d3d;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        .App .box-option li:hover {
-          background: rgb(253, 108, 103);
-        }
+      .App .box-option li:hover {
+        background: rgb(253, 108, 103);
+      }
   
-    .App .app-box{
+
+    .App .app-box {
       width: 320px;
       height: 150px;
       border-radius: 5px;
@@ -143,16 +141,17 @@ body{
       align-items: center
     }
   
-      .App .buttons{
-        width: 100%;
-        height: 35px;
-        margin-top: 15px;
-        /*background: crimson;*/
+
+    .App .buttons{
+      width: 100%;
+      height: 35px;
+      margin-top: 15px;
   
-        display: flex;
-        justify-content: space-between;
-      }
+      display: flex;
+      justify-content: space-between;
+    }
     
+
     .App .box-nota {
       width: 320px;
       height: 120px;
@@ -203,10 +202,12 @@ body{
           filter: grayscale(0);
         }
 
-        #check{
-          width: 18px;
-        }
+
+    #check {
+        width: 18px;
+    }
     
+
     .App .social-box{
       width: 320px;
       height: 62px;
@@ -219,6 +220,7 @@ body{
       justify-content: space-around;
       align-items: center;
     }
+
 
     /*Página de pagamento*/
     .App .box-pay {
@@ -248,97 +250,95 @@ body{
       }
 
 
-
-
-.config {
-  cursor: pointer;
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 0;
-  background: white;
-  top: 15px;
-  right: 15px;
-  
-  color: black;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-  .config img {
-    width: 25px;
-    height: 25px;
-  }
-
-.box-config {
-  position: absolute;
-  width: 230px;
-  height: 175px;
-  border-radius: 10px;
-  background: white;
-  top: 65px;
-  right: 15px;
-
-  color: black;
-
-  display: none;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-  .box-config p {
-    width: 95%; 
-    height: 15px; 
+  body .config {
+    cursor: pointer;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 0;
+    background: white;
+    top: 15px;
+    right: 15px;
     
-    color: #3d3d3d; 
-    padding: 10px 0px 0px 5px;
-  }
-
-
-  .box-config ul {
-    width: 95%;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 0px;
-    background: #dcdcdc;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .box-config ul li {
-    cursor: pointer;
-    width: 35px;
-    height: 35px;
-    list-style: none;
-    border-radius: 5px;
-    background: silver;
-
-    color: white;
+    color: black;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
   }
 
-  .box-config .buy {
-    cursor: pointer;
-    width: 95%;
-    height: 50px;
-    border-radius: 10px;
-    background: #dcdcdc;
+    .config img {
+      width: 25px;
+      height: 25px;
+    }
 
-    font-size: 1.26em;
-    color: white;
+    .box-config {
+      position: absolute;
+      width: 230px;
+      height: 175px;
+      border-radius: 10px;
+      background: white;
+      top: 65px;
+      right: 15px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+      color: black;
+
+      display: none;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box-config p {
+      width: 95%; 
+      height: 15px; 
+      
+      color: #3d3d3d; 
+      padding: 10px 0px 0px 5px;
+    }
+
+
+    .box-config ul {
+      width: 95%;
+      height: 50px;
+      border-radius: 10px;
+      margin-top: 0px;
+      background: #dcdcdc;
+
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+      .box-config ul li {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        list-style: none;
+        border-radius: 5px;
+        background: silver;
+
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .box-config .buy {
+      cursor: pointer;
+      width: 95%;
+      height: 50px;
+      border-radius: 10px;
+      background: #dcdcdc;
+
+      font-size: 1.26em;
+      color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .box-config .buy:hover {
       background: #32CD32;
