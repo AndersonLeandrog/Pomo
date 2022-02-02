@@ -1,8 +1,3 @@
-var script = document.createElement('script')
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'
-script.type = 'text/javascript'
-document.getElementsByTagName('head')[0].appendChild(script)
-
 window.addEventListener('load', () => {
     const box = $('<div>')
     $(box)
@@ -30,12 +25,12 @@ window.addEventListener('load', () => {
     const textBox = $('<div>')
     $(textBox)
     .append(`
-      Olá, seja bem vindo ao aplicativo TakeFocus! 🎄
+      Olá, seja bem vindo ao aplicativo TakeFocus!
       Esse aplicativo é desenvolvido em HTML, CSS e Javascript e jQuery, e
       ainda está sofrendo alguns ajustes, mas logo estará finalizado.
                                                   
       Se gostar do aplicativo, por favor não deixe de me seguir no
-      GITHUB: GITHUB.COM/ANDERSONLEANDROG - e não se esqueça de 
+      git: github.com/andersonleandrog - e não se esqueça de 
       dar um feedback lá na plataforma, isso me ajuda muuuuito! \u2764
     `)
 

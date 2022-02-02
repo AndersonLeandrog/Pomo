@@ -1,22 +1,17 @@
-var script = document.createElement('script')
-script.src = 'http://code.jquery.com/jquery-1.11.0.min.js'
-script.type = 'text/javascript'
-document.getElementsByTagName('head')[0].appendChild(script)
-
 window.addEventListener('load', () => {
   const defaul = $('.de')
   const black = $('.bk')
-  const coral = $('.cr')
+  const midnight = $('.md')
   const coffe = $('.co')
   const green = $('.gr')
 
   //Default
   $(defaul).click(original = () => {
-    $('body').css('background', '#6959CD')
-    $('.app-box').css('background', '#8070E6')
-    $('.de').css('background', '#6959CD')
+    $('body').css('background', '#cd5c5c')
+    $('.app-box').css('background', '#f08080')
+    $('.de').css('background', '#cd5c5c')
     $('.bk').css('background', '#C0C0C0')
-    $('.cr').css('background', '#C0C0C0')
+    $('.md').css('background', '#C0C0C0')
     $('.co').css('background', '#C0C0C0')
     $('.gr').css('background', '#C0C0C0')
   })
@@ -24,30 +19,23 @@ window.addEventListener('load', () => {
 
   //Black
   $(black).click(() => {
-    $('body').css('background', '#1C1C1C')
-      $('.app-box').css('background', '#3D3D3D')
+      $('body').css('background', '#1c1c1c')
+      $('.app-box').css('background', '#3d3d3d')
       $(defaul).css('background', 'silver')
-      $(black).css('background', 'white')
-      $(coral).css('background', 'silver')
+      $(black).css('background', '#1c1c1c')
+      $(midnight).css('background', 'silver')
       $(coffe).css('background', 'silver')
       $(green).css('background', 'silver')
-
-      for(let v = true; v === true; v++) {
-        const contagem = setInterval(() => {
-            original()
-            clearInterval(contagem)
-        }, 5000)
-      }
   })
 
 
-  //Coral
-  $(coral).click(() => {
-    $('body').css('background', '#CD5C5C')
-    $('.app-box').css('background', '#f08080')
+  //Midnight
+  $(midnight).click(() => {
+    $('body').css('background', 'rgb(104,87,211)')
+    $('.app-box').css('background', 'rgb(128,112,230)')
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
-    $(coral).css('background', 'coral')
+    $(midnight).css('background', 'rgb(128,112,230)')
     $(coffe).css('background', 'silver')
     $(green).css('background', 'silver')
   })
@@ -56,19 +44,12 @@ window.addEventListener('load', () => {
   //Coffe
   $(coffe).click(() => {
     $('body').css('background', '#d2b48c')
-    $('.app-box').css('background', '#f5deb3')
+    $('.app-box').css('background', 'rgb(221, 188, 145)')
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
-    $(coral).css('background', 'silver')
+    $(midnight).css('background', 'silver')
     $(coffe).css('background', '#D2B48C')
     $(green).css('background', 'silver')
-
-    for(let v = true; v === true; v++) {
-      const contagem = setInterval(() => {
-          original()
-          clearInterval(contagem)
-      }, 5000)
-    }
   })
 
   
@@ -78,15 +59,8 @@ window.addEventListener('load', () => {
     $('.app-box').css('background', '#3cb371')
     $(defaul).css('background', 'silver')
     $(black).css('background', 'silver')
-    $(coral).css('background', 'silver')
+    $(midnight).css('background', 'silver')
     $(coffe).css('background', 'silver')
     $(green).css('background', '#2E8B57')
-
-    for(let v = true; v === true; v++) {
-      const contagem = setInterval(() => {
-          original()
-          clearInterval(contagem)
-      }, 5000)
-    }
   })
 })
