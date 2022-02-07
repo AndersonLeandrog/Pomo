@@ -19,9 +19,15 @@
   </head>
 
   <body>
-    <button class="config">
-      <img  class="img" src="img/config.png" alt="config">
-    </button>
+    <div id="box-icon">
+      <button class="icon">
+        <img src="img/resize.png" class="resize" alt="resize">
+      </button>
+  
+      <button class="icon">
+        <img src="img/config.png" class="config" alt="config">
+      </button>
+    </div>
 
     <div class="box-config">
       <p>temas</p>
@@ -47,9 +53,9 @@
       </div>
 
       <ul class="box-option">
-          <li class="li" onclick="tresMinutos()">3 Minutos</li>
-          <li class="li" onclick="cincoMinutos()">5 Minutos</li>
-          <li class="li" onclick="quinzeMinutos()">15 Minutos</li>
+          <li class="addtree">3 Minutos</li>
+          <li class="addfive">5 Minutos</li>
+          <li class="addfifteen">15 Minutos</li>
       </ul>
 
       <div class="app-box">
@@ -57,14 +63,14 @@
       </div>
 
       <div class="buttons">
-        <button onclick="iniciar()" class="iniciar">start</button>
-        <button onclick="parar()">stop</button>
-        <button onclick="resetar()">reset</button>
+        <button class="iniciar">start</button>
+        <button class="parar">stop</button>
+        <button class="resetar">reset</button>
       </div>
 
       <div class="box-nota">
         <input type="text" title="" placeholder="Adicione uma nota...">
-        <button class="add" onclick="adicionarNota()">add</button>
+        <button class="add">add</button>
 
         <div class="checkBox">
           <input type="checkbox" name="check" id="check" checked>
@@ -73,7 +79,7 @@
 
         <div class="eNota">
           <p class="pNota">+</p>
-          <img class="rem" src="img/remove.png" alt="icone-remover-nota" onclick="removerNota()" style="display: none;">
+          <img class="rem" src="img/remove.png" alt="icone-remover-nota" style="display: none;">
         </div>
       </div>
 

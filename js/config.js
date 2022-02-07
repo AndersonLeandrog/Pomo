@@ -7,8 +7,9 @@ window.addEventListener('load', () => {
             click = 0
             $('.box-config').fadeOut(t)
             clearInterval(intervalo)
-        }  
-        $('.box-config').fadeIn(t).attr('style', 'display: flex;')
+        } else {
+            $('.box-config').fadeIn(t).attr('style', 'display: flex;')
+        }
     })
 
     $('.App').click(() => {
@@ -17,5 +18,25 @@ window.addEventListener('load', () => {
 
     $('.buy').click(() => {
         location.href='data.html'
+    })
+
+    $('.resize').click(function() {
+        click++
+        if(click > 1) {
+            click = 0
+            $(this).attr('src', 'img/full.png')
+            document.querySelector('.App').animate([
+                {marginLeft: '10px'},
+                {marginLeft: '-10px'},
+                {marginLeft: '0px'}
+            ], {
+                duration: 150,
+                iterations: 1,
+                fill: 'both',
+            })
+        } else {
+            $(this).attr('src', 'img/resize.png')
+            //...
+        }
     })
 })

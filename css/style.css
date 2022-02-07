@@ -12,6 +12,7 @@ body {
 
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
   h1 {
@@ -23,7 +24,7 @@ body {
     padding-top: 10px;
   }
   
-  img {
+  header img {
     width: 38px;
     height: 38px;
   }
@@ -175,9 +176,9 @@ body {
         position: relative;
         width: 320px;
         height: 35px;
-        border: 1px solid #fff;
+        border: 1px dotted #fff;
         border-radius: 5px;
-        background: transparent;
+        background: rgb(0,0,0,0.1);
 
         display: flex;
         justify-content: center;
@@ -215,7 +216,8 @@ body {
       height: 62px;
       margin-top: 5%;
       border-radius: 5px;
-      background: #f5f5f5;
+      border: 1px solid #fff;
+      background: transparent ;
   
       display: flex;
       flex-direction: row;
@@ -252,28 +254,27 @@ body {
       }
 
 
-  body .config {
-    cursor: pointer;
+  body #box-icon {
     position: absolute;
-    width: 42px;
     height: 42px;
-    border-radius: 50%;
-    border: 0;
-    background: #fff;
     top: 15px;
     right: 15px;
-    
-    color: black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;  
   }
 
-    .config img {
-      width: 25px;
-      height: 25px;
+    body .icon {
+      cursor: pointer;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: #fff;
+      color: black;
     }
+
+      .icon img {
+        width: 25px;
+        height: 25px;
+      }
 
     .box-config {
       position: absolute;
@@ -341,3 +342,4 @@ body {
       justify-content: center;
       align-items: center;
     }
+
